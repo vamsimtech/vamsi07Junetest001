@@ -22,7 +22,7 @@ public class LaunchCheck {
 		Properties prop=obj.getObjectData();
 		driver.get(prop.getProperty("url"));
 		String urlCheck=driver.getCurrentUrl();
-		System.out.println("url is:"+urlCheck);
+		System.out.println("current url is:"+urlCheck);
 		Assert.assertEquals(urlCheck, "https://www.google.com/?gws_rd=ssl");
 	
 	}
